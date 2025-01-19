@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8"> <!-- Character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensure the page is responsive -->
+  <title>Mom's Kitchen</title> <!-- Page Title -->
+  
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <!-- Logo Image -->
+      <img src="img/logo.png" alt="Mom's Kitchen Logo">
+    </div>
+    <nav>
+      <!-- Navigation Menu -->
+      <ul>
+        <li><a href="#breakfast"><i class="fa fa-coffee"></i> Breakfast</a></li> <!-- Link to breakfast section with icon -->
+        <li><a href="#lunch"><i class="fas fa-utensils"></i> Lunch</a></li> <!-- Link to lunch section with icon -->
+        <li><a href="#dinner"><i class="fas fa-drumstick-bite"></i> Dinner</a></li> <!-- Link to dinner section with icon -->
+        <li><a href="#contact"><i class="fa fa-envelope"></i> Contact Us</a></li> <!-- Link to contact section with icon -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <!-- Hero Title and Description -->
+      <h1>Welcome to Mom's Kitchen</h1>
+      <p>Your favorite home-cooked meals, just like Mom made them!</p>
+      <!-- Call to Action Button -->
+      <a href="reserve.html" class="cta-button">Reserve A Table</a>
+    </div>
+  </section>
+
+  <!-- Main Content Section -->
+  <main>
+    <!-- Breakfast Menu Section -->
+    <section id="breakfast">
+      <h2>Breakfast Menu</h2>
+      <div class="menu-card-list">
+        <!-- Individual Menu Items -->
+        <div class="menu-card">
+          <h3>Pancakes</h3>
+          <p>$5.99</p>
+          <p>Fluffy pancakes served with syrup and butter.</p>
+        </div>
+        <div class="menu-card">
+          <h3>Eggs and Bacon</h3>
+          <p>$7.99</p>
+          <p>Scrambled eggs served with crispy bacon.</p>
+        </div>
+        <div class="menu-card">
+          <h3>Fruit Salad</h3>
+          <p>$4.99</p>
+          <p>A refreshing mix of seasonal fruits.</p>
+        </div>
+        <div class="menu-card">
+          <h3>Waffles</h3>
+          <p>$6.99</p>
+          <p>Golden waffles topped with whipped cream.</p>
+        </div>
+        <div class="menu-card">
+          <h3>Omelette</h3>
+          <p>$8.99</p>
+          <p>A classic omelette with cheese and veggies.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lunch Menu Section -->
+    <section id="lunch">
+      <h2>Lunch Menu</h2>
+      <div class="menu-card-list">
+        <!-- Individual Menu Items -->
+        <div class="menu-card">
+          <h3>Caesar Salad</h3>
+          <p>$8.99</p>
+          <p>Fresh romaine lettuce with Caesar dressing.</p>
+        </div>
+        <div class="menu-card">
+          <h3>Grilled Chicken Sandwich</h3>
+          <p>$9.99</p>
+          <p>Grilled chicken served with lettuce and tomato on a bun.</p>
+        </div>
+        <div class="menu-card">
+          <h3>Spaghetti Carbonara</h3>
+          <p>$12.99</p>
+          <p>Classic spaghetti with creamy carbonara sauce.</p>
+        </div>
+        <div class="menu-card">
+          <h3>Veggie Burger</h3>
+          <p>$10.99</p>
+          <p>A plant-based burger with fresh toppings.</p>
+        </div>
+        <div class="menu-card">
+          <h3>Grilled Cheese</h3>
+          <p>$7.99</p>
+          <p>Classic grilled cheese sandwich with a side of chips.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dinner Menu Section -->
+    <section id="dinner">
+      <h2>Dinner Menu</h2>
+      <div class="menu-card-list">
+        <!-- Individual Menu Items -->
+        <div class="menu-card">
+          <h3>Steak with Mashed Potatoes</h3>
+          <p>$18.99</p>
+          <p>Grilled steak served with creamy mashed potatoes.</p>
+        </div>
+        <div class="menu-card">
+          <h3>Salmon with Rice</h3>
+          <p>$16.99</p>
+          <p>Pan-seared salmon with seasoned rice.</p>
+        </div>
+        <div class="menu-card">
+          <h3>Vegetable Stir-fry</h3>
+          <p>$14.99</p>
+          <p>A medley of stir-fried vegetables served with rice.</p>
+        </div>
+        <div class="menu-card">
+          <h3>Chicken Alfredo</h3>
+          <p>$15.99</p>
+          <p>Grilled chicken with creamy Alfredo sauce over pasta.</p>
+        </div>
+        <div class="menu-card">
+          <h3>BBQ Ribs</h3>
+          <p>$19.99</p>
+          <p>Tender ribs served with BBQ sauce and a side of fries.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contact-form" action="" method="POST">
+          <!-- Name Input -->
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <!-- Email Input -->
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <!-- Message Textarea -->
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required style="background: white;color: black;"></textarea>
+          </div>
+          <!-- Submit Button -->
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <!-- Copyright Info -->
+      <p>&copy; 2025 Mom's Kitchen. All rights reserved.</p>
+      <!-- Contact Info -->
+      <p>Contact us: +1 234 567 890 | info@moms-kitchen.com</p>
+      <!-- Social Media Links -->
+      <div class="social-media-links">
+        <ul>
+          <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li> <!-- Facebook Link -->
+          <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li> <!-- Instagram Link -->
+          <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li> <!-- Twitter Link -->
+          <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li> <!-- LinkedIn Link -->
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Form Handling -->
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent default form submission
+      alert("Thank you for contacting us!"); // Display a thank you message
+      document.getElementById("contact-form").reset(); // Reset the form fields
+    });
+  </script>
+</body>
+</html>

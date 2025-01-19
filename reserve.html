@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation - Mom's Kitchen</title>
+  <link rel="stylesheet" href="Res.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Mom's Kitchen Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Reservation Form Section -->
+  <section class="reservation-form">
+    <h1>Make a Reservation</h1>
+    <form id="reservationForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="date">Reservation Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="people">Number of People</label>
+      <input type="number" id="people" name="people" min="1" required>
+
+      <button type="submit">Submit Reservation</button>
+    </form>
+
+    <!-- Reservation Confirmation Section -->
+    <div id="confirmationMessage" style="display:none;">
+      <h2>Reservation Confirmed!</h2>
+      <p><strong>Name:</strong> <span id="confirmedName"></span></p>
+      <p><strong>Email:</strong> <span id="confirmedEmail"></span></p>
+      <p><strong>Phone:</strong> <span id="confirmedPhone"></span></p>
+      <p><strong>Reservation Date:</strong> <span id="confirmedDate"></span></p>
+      <p><strong>Number of People:</strong> <span id="confirmedPeople"></span></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mom's Kitchen. All rights reserved.</p>
+    <p>Contact us: +1 234 567 890 | info@moms-kitchen.com</p>
+  </footer>
+
+  <!-- JavaScript to handle form submission -->
+  <script>
+    document.getElementById("reservationForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      // Get the values from the form
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const phone = document.getElementById("phone").value;
+      const date = document.getElementById("date").value;
+      const people = document.getElementById("people").value;
+
+      // Display the reservation details in the confirmation message
+      document.getElementById("confirmedName").innerText = name;
+      document.getElementById("confirmedEmail").innerText = email;
+      document.getElementById("confirmedPhone").innerText = phone;
+      document.getElementById("confirmedDate").innerText = date;
+      document.getElementById("confirmedPeople").innerText = people;
+
+      // Show the confirmation message
+      document.getElementById("confirmationMessage").style.display = "block";
+
+      // Optionally, hide the form after submission
+      document.getElementById("reservationForm").style.display = "none";
+    });
+  </script>
+</body>
+</html>
